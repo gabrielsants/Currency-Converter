@@ -40,7 +40,7 @@ $ ng serve -o
 This project is under license [MIT](./LICENSE).
 
 
-Made with ❤️ by Gabriel Santos 👋🏽 [Contact!](https://www.linkedin.com/in/gabrielsants/)
+Made with ❤️ by Gabriel Santos 👋🏽 [Contact!](https://www.linkedin.com/in/dev-gabriel-santos/)
 
 <p>
 	<a href="https://www.buymeacoffee.com/gabrielsaints">
