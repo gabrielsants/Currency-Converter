@@ -31,6 +31,10 @@ $ ng serve -o
 
 ```
 
+## Preview
+
+![preview](https://github.com/gabrielsants/Currency-Converter/blob/main/resources/currency-converter-preview.png)
+
 ## 📝 License
 
 This project is under license [MIT](./LICENSE).
