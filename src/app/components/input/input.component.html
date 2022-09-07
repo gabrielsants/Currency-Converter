@@ -1,0 +1,22 @@
+<div>
+  <mat-form-field appearance="fill" floatLabel="always" class="full-width">
+    <mat-label>Amount in {{ currencie.value }}</mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="valueFrom"
+      [(ngModel)]="valueFrom"
+      (keyup)="feedback($event)"
+    />
+    <span matPrefix>{{ currencie.prefix }}&nbsp;</span>
+    <button
+      *ngIf="valueFrom"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="valueFrom = 0"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
