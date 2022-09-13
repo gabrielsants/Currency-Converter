@@ -2,6 +2,10 @@
 
 This project was developed in order to convert currencies using a public API in a lighter way and with a pleasant interface. Therefore, the interface was based on [Google Translate](https://translate.google.com) using the animations and components of [Angular Material](https://material.angular.io).
 
+# Preview
+
+You can preview the app [here](https://currency-converter-smoky-delta.vercel.app).
+
 ## 💻 Technologies
 
 In the development of this software was used: 
