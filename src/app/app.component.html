@@ -1,5 +1,5 @@
 <!-- Toolbar -->
-<header>
+<section class="flex w-full">
 
   <div class="toolbar" role="banner">
     <img width="40" alt="Currency Logo"
@@ -16,75 +16,90 @@
       </svg>
     </a>
   </div>
-</header>
+</section>
 
-<body>
+<section class="flex w-auto mt-20 mx-4">
 
-  <div class="content" role="main">
+  <div class="flex-1">
+    <div class="contents">
 
-    <!-- Resources -->
-    <h2>Currency Converter</h2>
-    <p>Select the currencies to be converted:</p>
-    <br>
 
-    <div class="teste-testoso">
-      <mat-card>
-        <mat-card-content>
+      <div class="text-center mb-6">
+        <!-- Resources -->
+        <p class="text-lg ">Currency Converter</p>
+        <p>Select the currencies to be converted:</p>
 
-          <table>
-            <tr>
-              <td>
-                <mat-tab-group mat-align-tabs="start" (selectedTabChange)="setIndexFrom($event.index)">
-                  <mat-tab label="{{currencies[0].value}}">
-                    <input-component [currencie]="currencies[0]" (response)="setValueFrom($event)"></input-component>
-                  </mat-tab>
+      </div>
 
-                  <mat-tab label="{{currencies[1].value}}">
-                    <input-component [currencie]="currencies[1]" (response)="setValueFrom($event)"></input-component>
-                  </mat-tab>
+      <!-- outside area of container -->
+      <div class="shadow-md rounded-md">
+        <!-- background color -->
+        <div class="px-4 py-4 ">
 
-                  <mat-tab label="{{currencies[2].value}}">
-                    <input-component [currencie]="currencies[2]" (response)="setValueFrom($event)"></input-component>
-                  </mat-tab>
+          <div class="grid grid-rows-1 md:grid-cols-2 w-2/3 md:w-full gap-4">
 
-                  <mat-tab label="{{currencies[3].value}}">
-                    <input-component [currencie]="currencies[3]" (response)="setValueFrom($event)"></input-component>
-                  </mat-tab>
-                </mat-tab-group>
-              </td>
+            <!-- Currency to be converted -->
+            <div>
 
-              <td>
-                <mat-tab-group mat-align-tabs="start" (selectedTabChange)="setIndexTo($event.index)">
-                  <mat-tab label="{{currencies[0].value}}">
-                    <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[0]"></disabled-input>
-                  </mat-tab>
+              <mat-tab-group mat-align-tabs="start" (selectedTabChange)="setIndexFrom($event.index)">
+                <mat-tab label="{{currencies[0].value}}">
+                  <input-component [currencie]="currencies[0]" (response)="setValueFrom($event)"></input-component>
+                </mat-tab>
 
-                  <mat-tab label="{{currencies[1].value}}">
-                    <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[1]"></disabled-input>
-                  </mat-tab>
+                <mat-tab label="{{currencies[1].value}}">
+                  <input-component [currencie]="currencies[1]" (response)="setValueFrom($event)"></input-component>
+                </mat-tab>
 
-                  <mat-tab label="{{currencies[2].value}}">
-                    <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[2]"></disabled-input>
-                  </mat-tab>
+                <mat-tab label="{{currencies[2].value}}">
+                  <input-component [currencie]="currencies[2]" (response)="setValueFrom($event)"></input-component>
+                </mat-tab>
 
-                  <mat-tab label="{{currencies[3].value}}">
-                    <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[3]"></disabled-input>
-                  </mat-tab>
-                </mat-tab-group>
-              </td>
+                <mat-tab label="{{currencies[3].value}}">
+                  <input-component [currencie]="currencies[3]" (response)="setValueFrom($event)"></input-component>
+                </mat-tab>
+              </mat-tab-group>
 
-            </tr>
-          </table>
+            </div>
 
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button (click)="converter()">Convert</button>
-        </mat-card-actions>
-      </mat-card>
+            <!-- Converted currency -->
+            <div>
+
+              <mat-tab-group mat-align-tabs="start" (selectedTabChange)="setIndexTo($event.index)">
+                <mat-tab label="{{currencies[0].value}}">
+                  <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[0]"></disabled-input>
+                </mat-tab>
+
+                <mat-tab label="{{currencies[1].value}}">
+                  <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[1]"></disabled-input>
+                </mat-tab>
+
+                <mat-tab label="{{currencies[2].value}}">
+                  <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[2]"></disabled-input>
+                </mat-tab>
+
+                <mat-tab label="{{currencies[3].value}}">
+                  <disabled-input placeholder="{{valueTo}}" [currencie]="currencies[3]"></disabled-input>
+                </mat-tab>
+              </mat-tab-group>
+
+            </div>
+
+          </div>
+
+
+          <div class="">  
+            <button mat-button class="" (click)="converter()">Convert</button>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
 
-</body>
+</section>
 
 <!-- Footer -->
 <footer>

@@ -2,52 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.conversor {
-  padding: 20px;
-  max-width: 300px;
-  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #91a9df;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
-}
-
-.botao {
-  background-color: rgb(66, 57, 190);
-  color: white;
-}
-
-.botao:hover {
-  background-color: rgba(38, 30, 148, 0.8);
-  cursor: pointer;
-}
-
-table {
-  width: 100%;
-}
-
-mat-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.flex-element {
-  display: flex;
-}
-
-.tab-group-style{
-  width: 60vh;
-}
-
-.grid-style{
-  width: 1200px;
-
-  @media screen  {
-    
-  }
-}
-
 .spacer {
   flex: 1;
 }
@@ -77,16 +31,6 @@ mat-card {
 
 .toolbar #twitter-logo:hover {
   opacity: 0.8;
-}
-
-.content {
-  width: 100%;
-  display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 svg#clouds {
@@ -133,23 +77,4 @@ svg.material-icons:not(:last-child) {
   height: 16px;
   width: 16px;
   margin-right: 4px;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 1024px) {
-
-  .grid-style{
-    width: 600px;
-  }
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-
-  .grid-style{
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 575px) {
 }
