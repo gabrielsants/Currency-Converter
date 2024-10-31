@@ -41,14 +41,18 @@ $ ng serve -o
 
 ## Contributors
 
-[<img src="https://avatars.githubusercontent.com/u/31226269?v=4" width="115"><br><small>@LucasHBG</small>](https://github.com/LucasHBG)
+<a href="https://github.com/gabrielsants/Currency-Converter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gabrielsants/Currency-Converter" />
+</a>
 
 ## 📝 License
 
 This project is under license [MIT](./LICENSE).
 
 
-Made with ❤️ by Gabriel Santos 👋🏽 [Contact!](https://www.linkedin.com/in/dev-gabriel-santos/)
+Made with ❤️ by Contributors 
+
+Contact me on [LinkedIn!](https://www.linkedin.com/in/dev-gabriel-santos/) 👋🏽
 
 <p>
 	<a href="https://www.buymeacoffee.com/gabrielsaints">
